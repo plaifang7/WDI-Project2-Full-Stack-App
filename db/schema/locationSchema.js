@@ -1,5 +1,4 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const Schema = require('mongoose').Schema;
 
 var parkSchema = new Schema({
     parkName: String,
@@ -8,3 +7,5 @@ var parkSchema = new Schema({
     description: String,
     date: Date
 });
+
+module.exports = parkSchema;

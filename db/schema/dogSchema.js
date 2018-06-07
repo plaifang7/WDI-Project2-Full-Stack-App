@@ -1,5 +1,4 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const Schema = require('mongoose').Schema
 
 var dogSchema = new Schema({
     name: String,
@@ -8,3 +7,5 @@ var dogSchema = new Schema({
     description: String,
     image: String
 });
+
+module.exports = dogSchema

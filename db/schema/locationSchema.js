@@ -1,6 +1,6 @@
 const Schema = require('mongoose').Schema;
 
-var parkSchema = new Schema({
+var locationSchema = new Schema({
     parkName: String,
     image: String,
     streetAddress: String,
@@ -8,4 +8,4 @@ var parkSchema = new Schema({
     date: Date
 });
 
-module.exports = parkSchema;
+module.exports = locationSchema;

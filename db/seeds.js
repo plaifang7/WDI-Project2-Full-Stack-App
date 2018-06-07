@@ -66,7 +66,7 @@ User.remove()
 
     const user3 = new User({
       name: 'Nigel Ratburn',
-      image: 'https://imgur.com/0nXkegq',
+      image: 'https://vignette.wikia.nocookie.net/arthur/images/e/ef/Nigel_Ratburn.png/revision/latest?cb=20170617230759',
       favPark: 'Oakhurst Dog Park',
       dog: [dog4]
     })

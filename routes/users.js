@@ -26,14 +26,14 @@ res.render('user/new')
 })
 
 // CREATE Route
-// router.post('/', (req, res) => {
-// const newUser = req.body
-// User
-// .create(newUser)
-// .then(() => {
-//   res.redirect('/')
-// })
-// })
+router.post('/', (req, res) => {
+const newUser = req.body
+User
+.create(newUser)
+.then(() => {
+  res.redirect('/')
+})
+})
 
 // SHOW Route
 // router.get('/:id', (req, res) => {

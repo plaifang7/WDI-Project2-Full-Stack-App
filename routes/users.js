@@ -31,7 +31,7 @@ const newUser = req.body
 User
 .create(newUser)
 .then(() => {
-  res.redirect('/')
+  res.redirect('/users')
 })
 })
 

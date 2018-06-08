@@ -1,7 +1,9 @@
 
-<div>
-   {{#each userProfiles}} 
+<div class="userProf">
+   {{#each userProfile}} 
     <img src="{{image}}" alt="{{name}}">
+    <p>Name: {{name}}</p>
+    <p>Favorite Park: {{favPark}}</p>
 
     {{/each}}
 </div>

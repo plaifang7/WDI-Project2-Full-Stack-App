@@ -51,7 +51,7 @@ User.remove()
     })
 
     const user1 = new User({
-      name: 'Peter Whiskers',
+      name: 'Wes Bos',
       image: 'http://www.digitaljournal.com/img/8/7/8/i/7/9/0/o/wesPress3.jpg',
       favPark: 'Piedmont Dog Park',
       dog: [dog1]
@@ -59,7 +59,7 @@ User.remove()
 
     const user2 = new User({
       name: 'Patrick Lai-Fang',
-      image: 'https://imgur.com/0nXkegq',
+      image: 'https://i.imgur.com/3CzpYJx.png',
       favPark: 'Glenlake Dog Park',
       dog: [dog2, dog3]
     })

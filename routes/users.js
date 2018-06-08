@@ -21,9 +21,9 @@ User
 })
 
 // NEW Route - Sign Up button in layout.hbs creates new profile
-// router.get('/new', (req, res) => {
-// res.render('user/new')
-// })
+router.get('/new', (req, res) => {
+res.render('user/new')
+})
 
 // CREATE Route
 // router.post('/', (req, res) => {

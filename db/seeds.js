@@ -31,7 +31,7 @@ User.remove()
       breed: 'Pitbull Mix',
       age: 1,
       description: 'King is a very energetic dog who loves to play with other dogs, both big and small. He is mixed with Pitbull and Jack Russell Terrier, which illustrates just the ball of energy he is! His favorite toys are his ball, kong and chewing ring. He loves to play fetch and catches like a champ. ',
-      image: 'https://imgur.com/KePgseE'
+      image: 'https://i.imgur.com/KePgseE.jpg'
     })
 
     const dog3 = new Dog({
@@ -59,7 +59,7 @@ User.remove()
 
     const user2 = new User({
       name: 'Patrick Lai-Fang',
-      image: 'https://i.imgur.com/KePgseE.jpg',
+      image: 'https://i.imgur.com/3CzpYJx.png',
       favPark: 'Glenlake Dog Park',
       dog: [dog2, dog3]
     })

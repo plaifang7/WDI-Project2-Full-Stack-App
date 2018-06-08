@@ -1,13 +1,18 @@
 <div class="userProf">
     {{#each userProfile}}
-    <img src="{{image}}" alt="{{name}}">
+    <img class="userPic" src="{{image}}" alt="{{name}}">
     <p>Name: {{name}}</p>
     <p>Favorite Park: {{favPark}}</p>
-    
-        {{#each Dog}}
-        <img src="{{image}}" alt="{{name}}">
+
+    <div class="user Dog">
+        <h2>{{name}} 's dog</h2>
+        {{#each dog}}
+        <img class="dogPic" src="{{image}}" alt="{{name}}">
         <p>Name: {{name}}</p>
-        
+        <p>Breed: {{breed}}</p>
+        <p>Age: {{age}}</p>
+    </div>
+<button><a href="/user/:id">View Profile</a></button>
+    {{/each}} {{/each}}
     
-    {{/each}}{{/each}}
 </div>

@@ -7,19 +7,21 @@
 </head>
 
 <body>
+  <h1>{{title}}</h1>
   <ul class="navbar">
-    <h1>{{title}}</h1>
     <li>
-      <a href="/views/user/{{@index}}">Home</a>
+      <a href="/">Home</a>
     </li>
     <li>
-      <a href="/views/user/{{@show}}">Profile</a>
+      <a href="/users">Profile</a>
     </li>
     <li>
-      <a href="/views/parks/{{@index}}">Parks</a>
+      <a href="/parks">Parks</a>
     </li>
   </ul>
-  <button class="signUp"><a href="/views/user/{{@new}}">Sign Up</a></button>
+  <button class="signUp">
+    <a href="/views/user/{{@new}}">Sign Up</a>
+  </button>
   {{{body}}}
 </body>
 

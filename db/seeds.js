@@ -59,7 +59,7 @@ User.remove()
 
     const user2 = new User({
       name: 'Patrick Lai-Fang',
-      image: 'https://i.imgur.com/3CzpYJx.png',
+      image: 'https://i.imgur.com/KePgseE.jpg',
       favPark: 'Glenlake Dog Park',
       dog: [dog2, dog3]
     })

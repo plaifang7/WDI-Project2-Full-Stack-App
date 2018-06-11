@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const User = require('../models/user')
-const Dog = require('../models/dog')
+const Dog = require('../models/dog');
 
 
 router.get('/', (req, res, next) => {
@@ -35,9 +35,9 @@ router.get('/', (req, res, next) => {
 
   // SHOW Route
   router.get('/:id', (req, res) => {
+
     User
       .findById(req.params.id)
-      .dog.findById(req.params.id)
       .then((userProf) => {
         res.render('user/show', { userProf })
       })

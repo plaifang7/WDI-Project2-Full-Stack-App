@@ -1,0 +1,17 @@
+<h1>Edit User</h1>
+
+<form action="/users" method="POST">
+  <div>
+    <label for="title">Name</label>
+    <input type="text" name="name" value="{{userProf.name}}"/>
+  </div>
+  <div>
+    <label for="description">Image</label>
+    <input type="text" name="image" value="{{userProf.image}}"/>
+  </div>
+  <div>
+    <label for="subject">Favorite Park</label>
+    <input type="text" name="favPark" value="{{userProf.favPark}}" />
+  </div>
+  <button type="submit">Update</button>
+</form>

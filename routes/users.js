@@ -44,20 +44,20 @@ router.get('/', (req, res, next) => {
   })
 
   // EDIT Route
-  // router.get('/:id/edit', (req, res) => {
-  // User
-  // .findById(req.params.id)
-  // .then((update) => {
-  //   res.render('user/edit', { userProf: update })
-  // })
-  // })
+  router.get('/:id/edit', (req, res) => {
+  User
+  .findById(req.params.id)
+  .then((userProf) => {
+    res.render('user/edit', { userProf: userProf })
+  })
+  })
 
   // UPDATE Route
-  // router.put('/:id', (req, res) => {
-  // User.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
-  // res.redirect(`/user/${req.params.id}`)
-  // })
-  // })
+  router.put('/:id', (req, res) => {
+  User.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
+  res.redirect(`/user/${req.params.id}`)
+  })
+  })
 
   // DELETE Route - here this will happen if the user presses No match, 
   // so I will need to figure out how to tie the button to this route.

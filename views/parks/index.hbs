@@ -1,9 +1,11 @@
 <div class="parkDisplay">
-    {{#each parkProf}}
-    <img src="{{image}}" alt="{{parkName}}">
+    {{#each park}}
     <h2>{{parkName}}</h2>
+    <img class="favParkProf"src="{{image}}" alt="{{parkName}}">
+    <h3>Address:</h3>
     <p>{{streetAddress}}</p>
-    <p>{{description}}</p>
+    <h3>About {{parkName}}:</h3>
+    <p> {{description}}</p>
     <p><a href="{{website}}">{{parkName}}'s website</a></p>
     {{/each}}
 </div>

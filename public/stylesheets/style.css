@@ -32,3 +32,8 @@ a {
 .userShow{
   width: 400px;
 }
+.favParkProf{
+  width: 650px;
+  margin: auto;
+  display: block;
+}

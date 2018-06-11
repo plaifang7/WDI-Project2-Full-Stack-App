@@ -1,13 +1,18 @@
 const express = require('express')
-const router = express.Router()
+const router = express.Router({mergeParams: true})
+const User = require('../models/user')
 const Park = require('../models/location')
 
-router.get('/', (req, res, next) => {
-    Park
-        .find()
-        .then((parkProf) => {
-            console.log(parkProf)
-            res.render('parks/index', { parkProf: parkProf})
+router.get('/', (req, res) => {
+    console.log("Index Test for Parks")
+    User
+        .findById(req.params.userId)
+        .then((user) => {
+            const park = user.location
+            res.render('parks/index', {
+                user,
+                park
+            })
         })
         .catch((err) => {
             res.send(err)

@@ -1,4 +1,6 @@
 <div class="userBox">
+    <button class="favPark"><a href="/users/{{userProf._id}}/parks">Favorite Park</a></button>
+    <button class="addDog"><a href="/users/{{userProf._id}}/addDog">Add Dog</a></button>
     <h1 class="userShow">{{userProf.name}}</h1>
     <img class="userPicProf" src="{{userProf.image}}" alt="{{userProf.name}}">
     <p>Favorite Park: {{userProf.favPark}}</p>

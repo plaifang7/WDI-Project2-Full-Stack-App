@@ -89,8 +89,12 @@ User.remove()
     })
 
     const users = [user1, user2, user3]
+    const parks = [park1, park2]
+    const dogs = [dog1, dog2, dog3, dog4]
 
     return User.insertMany(users)
+    return Park.insertMany(parks)
+    return Dog.insertMany(dogs)
   })
 
   .then(() => {

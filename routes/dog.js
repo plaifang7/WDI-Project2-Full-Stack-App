@@ -5,7 +5,9 @@ const Dog = require('../models/dog')
 
 // This gives the user functionality to add a new dog to their profile
 router.get('/new', (req, res, next) => { 
-       res.render('dog/new')
+       res.render('dog/new', {
+           userId: req.params.userId
+       })
    }) 
 
 //Create Route for new Dog

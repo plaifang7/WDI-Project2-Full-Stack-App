@@ -2,9 +2,7 @@ const express = require('express')
 const router = express.Router()
 const User = require('../models/user')
 
-// router.get('/', function(req, res, next) {
-//   res.render('user/index', { title: 'Dinder' });
-// });
+
 
 router.get('/', (req, res, next) => {
 // Find all Users

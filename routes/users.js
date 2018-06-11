@@ -34,13 +34,13 @@ User
 })
 
 // SHOW Route
-// router.get('/:id', (req, res) => {
-// User
-// .findById(req.params.id)
-// .then((UserProf) => {
-//   res.render('user/show', { userProf })
-// })
-// })
+router.get('/:id', (req, res) => {
+User
+.findById(req.params.id)
+.then((userProf) => {
+  res.render('user/show', { userProf })
+})
+})
 
 // EDIT Route
 // router.get('/:id/edit', (req, res) => {

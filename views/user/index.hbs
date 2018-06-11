@@ -5,7 +5,7 @@
     <p>Name: {{name}}</p>
     <p>Favorite Park: {{favPark}}</p>
 
-    <div class="user Dog">
+    <div class="userDog">
         <h2>{{name}} 's dog</h2>
         {{#each dog}}
         <img class="dogPic" src="{{image}}" alt="{{name}}">
@@ -14,7 +14,10 @@
         <p>Age: {{age}}</p>
     </div>
 
-<button><a href="/user/{{_id}}">View Profile</a></button>
-    {{/each}} {{/each}}
+
+    {{/each}} 
+    <button><a href="/user/{{_id}}">View Profile</a></button>
+    <br>
+    {{/each}}
     
 </div>

@@ -26,4 +26,9 @@ a {
 .dogPic{
   width: 200px;
 }
-
+.dogShow{
+  width: 250px;
+}
+.userShow{
+  width: 400px;
+}

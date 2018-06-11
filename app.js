@@ -8,8 +8,10 @@ require('dotenv').config();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var parkRouter = require('./routes/location');
+var dogRouter = require('./routes/dog');
 const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI); 
+mongoose.connect(process.env.MONGODB_URI);
 
 var app = express();
 
@@ -26,9 +28,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/parks', parkRouter);
+app.use('/dog', dogRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
@@ -38,17 +42,17 @@ if (process.env.MONGODB_URI) {
 else {
   mongoose.connect('mongodb://localhost/express-movies');
 }
-mongoose.connection.on('error', function(err) {
+mongoose.connection.on('error', function (err) {
   console.error('MongoDB connection error: ' + err);
   process.exit(-1);
-  }
+}
 );
-mongoose.connection.once('open', function() {
+mongoose.connection.once('open', function () {
   console.log("Mongoose has connected to MongoDB!");
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
@@ -58,6 +62,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+//allows me to test on local host
 app.listen(3000, function () {
   console.log('app listening on port 3000')
 })

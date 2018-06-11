@@ -29,7 +29,7 @@ app.use(methodOverride("_method"));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/users/:userId/parks', parkRouter);
-app.use('/users/:userId/addDog', dogRouter);
+app.use('/users/:userId/dog', dogRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

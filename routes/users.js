@@ -25,6 +25,7 @@ router.get('/', (req, res, next) => {
 
   // CREATE Route
   router.post('/', (req, res) => {
+    console.log("create user")
     const newUser = req.body
     User
       .create(newUser)

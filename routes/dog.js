@@ -1,12 +1,24 @@
 const express = require('express')
-const router = express.Router(mergeParams: true)
+const router = express.Router({mergeParams: true});
 const User = require('../models/user')
 const Dog = require('../models/dog')
 
-router.get('/', (req, res, next) => { 
-    
+// This gives the user functionality to add a new dog to their profile
+router.get('/new', (req, res, next) => { 
+       res.render('dog/new')
+   }) 
 
+//Create Route for new Dog
+router.post('/', (req, res) => {
+    const newDog = req.params.userId
+    User
+        .create(newDog)
+        .then(() => {
+            res.redirect(`/users/${newDog}`)
+        })
 })
+
+
 
 
 module.exports = router;

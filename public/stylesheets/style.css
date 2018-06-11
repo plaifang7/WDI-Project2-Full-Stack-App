@@ -1,6 +1,9 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('http://berniesiegelmd.com/wp-content/uploads/2013/07/dogs-playing.jpg');
+  background-repeat: no-repeat;
+  
 }
 
 a {
@@ -15,6 +18,9 @@ a {
   font-size: 150px;
   text-align: center;
 
+}
+.userPic{
+  width: 400px;
 }
 
 .dogPic{

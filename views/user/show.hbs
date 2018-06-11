@@ -4,13 +4,18 @@
     <p>Favorite Park: {{userProf.favPark}}</p>
 
     <div class="dogBox">
-       
+
         <h3>{{dogProf.dog}}</h3>
         <img class="dogShow" src="{{dogProf.image}}" alt="{{dogProf.name}}">
         <p>Breed: {{dogProf.breed}}</p>
         <p>Age: {{dogProf.age}}</p>
         <p>About {{dogProf.name}}: {{dogProf.description}}</p>
     </div>
-
-<button class="editButton"><a href="/users/{{userProf._id}}/edit">Edit User</a></button>
+    <button class="match">Match</button>
+    <form action="/users/{{userProf._id}}?_method=DELETE" method="POST">
+        <button class="noMatch">No Match</button>
+    </form>
+    <button class="editButton">
+        <a href="/users/{{userProf._id}}/edit">Edit User</a>
+    </button>
 </div>

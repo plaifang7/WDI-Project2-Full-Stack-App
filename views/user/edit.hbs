@@ -1,8 +1,8 @@
-<h1>Edit User</h1>
+<h1>Edit {{userProf.name}}</h1>
 
 <form action="/users/{{userProf._id}}?_method=PUT" method="POST">
   <div>
-    <label for="title">Name</label>
+    <label for="name">Name</label>
     <input type="text" name="name" value="{{userProf.name}}"/>
   </div>
   <div>
@@ -10,7 +10,7 @@
     <input type="text" name="image" value="{{userProf.image}}"/>
   </div>
   <div>
-    <label for="subject">Favorite Park</label>
+    <label for="favPark">Favorite Park</label>
     <input type="text" name="favPark" value="{{userProf.favPark}}" />
   </div>
   <button type="submit">Update</button>

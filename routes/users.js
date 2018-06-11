@@ -45,29 +45,31 @@ router.get('/', (req, res, next) => {
 
   // EDIT Route
   router.get('/:id/edit', (req, res) => {
-  User
-  .findById(req.params.id)
-  .then((userProf) => {
-    res.render('user/edit', { userProf: userProf })
-  })
+    User
+      .findById(req.params.id)
+      .then((userProf) => {
+        res.render('user/edit', { userProf: userProf })
+      })
   })
 
   // UPDATE Route
   router.put('/:id', (req, res) => {
-  User.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
-  res.redirect(`/user/${req.params.id}`)
-  })
+    User
+      .findByIdAndUpdate(req.params.id, req.body, { new: true })
+      .then(() => {
+        res.redirect(`/users/${req.params.id}`)
+      })
   })
 
   // DELETE Route - here this will happen if the user presses No match, 
   // so I will need to figure out how to tie the button to this route.
-  // router.delete('/:id', (req, res) => {
-  // User.findByIdAndRemove(req.params.id)
-  // .then(() => {
-  //   console.log('Successfully Deleted')
-  //   res.redirect('/index')
-  // })
-  // })
+  router.delete('/:id', (req, res) => {
+  User.findByIdAndRemove(req.params.id)
+  .then(() => {
+    console.log('Successfully Deleted')
+    res.redirect('/users')
+  })
+  })
 })
 
 module.exports = router;

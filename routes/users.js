@@ -37,6 +37,7 @@ router.get('/', (req, res, next) => {
   router.get('/:id', (req, res) => {
     User
       .findById(req.params.id)
+      .dog.findById(req.params.id)
       .then((userProf) => {
         res.render('user/show', { userProf })
       })

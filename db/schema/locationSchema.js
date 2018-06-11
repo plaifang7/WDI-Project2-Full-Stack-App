@@ -5,7 +5,7 @@ var locationSchema = new Schema({
     image: String,
     streetAddress: String,
     description: String,
-    date: Date
+    website: String
 });
 
 module.exports = locationSchema;

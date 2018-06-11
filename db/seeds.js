@@ -5,7 +5,7 @@ var mongoose = require("mongoose");
 const Schema = require('mongoose').Schema
 const User = require('../models/user');
 const Dog = require('../models/dog');
-// const Park = require('../models/location');
+const Park = require('../models/location');
 
 
 
@@ -19,6 +19,20 @@ mongoose.connect('mongodb://localhost/WDI-Project2-Full-Stack-App')
 
 User.remove()
   .then(() => {
+    const park1 = new Park({
+      parkName: 'Piedmont Dog Park',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Dog_park_in_Piedmont_Park.JPG',
+      streetAddress: 'Park Dr NE, Atlanta, GA 30309',
+      description: 'Piedmont Park is a haven for dogs and humans alike! While a City of Atlanta ordinance requires all dogs in public areas to be leashed, Piedmont Dog Park is one of the few locations in metro Atlanta where dogs may run free, off the leash. Since 2002, this special off-leash area is one of the most popular features of Piedmont Park.', 
+      website: 'https://www.piedmontpark.org/things-to-do/dog-parks/'
+    })
+    const park2 = new Park({
+      parkName: 'GlenLake Dog Park',
+      image: 'https://media-cdn.tripadvisor.com/media/photo-s/08/be/60/cf/glenlake-park-pool.jpg',
+      streetAddress: 'Park Dr NE, Atlanta, GA 30309',
+      description: 'Decatur Dog Parks have been busy with families, neighbors and four-legged friends visiting and playing together. Dog parks give citizens and their dogs an opportunity to exercise and socialize', 
+      website: 'http://www.decaturga.com/city-government/city-departments/active-living/dog-parks'
+    })
     const dog1 = new Dog({
       name: 'Fido',
       breed: 'Mini Schnauzer',
@@ -54,21 +68,24 @@ User.remove()
       name: 'Wes Bos',
       image: 'http://www.digitaljournal.com/img/8/7/8/i/7/9/0/o/wesPress3.jpg',
       favPark: 'Piedmont Dog Park',
-      dog: [dog1]
+      dog: [dog1],
+      location: [park1]
     })
 
     const user2 = new User({
       name: 'Patrick Lai-Fang',
       image: 'https://i.imgur.com/3CzpYJx.png',
       favPark: 'Glenlake Dog Park',
-      dog: [dog2, dog3]
+      dog: [dog2, dog3],
+      location: [park2]
     })
 
     const user3 = new User({
       name: 'Nigel Ratburn',
       image: 'https://vignette.wikia.nocookie.net/arthur/images/e/ef/Nigel_Ratburn.png/revision/latest?cb=20170617230759',
-      favPark: 'Oakhurst Dog Park',
-      dog: [dog4]
+      favPark: 'Glenlake Dog Park',
+      dog: [dog4],
+      location: [park2]
     })
 
     const users = [user1, user2, user3]

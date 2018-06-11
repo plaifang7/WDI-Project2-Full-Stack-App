@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const dogSchema = require('../db/schema/locationSchema')
+const locationSchema = require('../db/schema/locationSchema')
 
 const Park = mongoose.model('park', locationSchema)
 

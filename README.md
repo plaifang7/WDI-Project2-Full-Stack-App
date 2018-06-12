@@ -17,7 +17,7 @@
 
 
 <h3>Trello Board:</h3>
-* <p>https://trello.com/b/ebp7TUrp/plf-wdi-project-2-doginder</p>
+* https://trello.com/b/ebp7TUrp/plf-wdi-project-2-doginder
 <br>
 <h3>Heroku:</h3>
-* <p> https://doginder.herokuapp.com/</p>
+* https://doginder.herokuapp.com/

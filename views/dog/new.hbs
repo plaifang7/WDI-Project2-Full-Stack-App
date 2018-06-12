@@ -1,25 +1,26 @@
-<h1>Add New Dog</h1>
-
+<h1 class="addDogForm">Add New Dog</h1>
+<div class="form-group">
 <form action="/users/{{userId}}/dog" method="POST">
   <div>
     <label for="name">Name</label>
-    <input type="text" name="name" placeholder="Dog's name"/>
+    <input type="text" class="form-control" name="name" placeholder="Dog's name"/>
   </div>
   <div>
     <label for="image">Image</label>
-    <input type="text" name="image" placeholder="Dog's Image"/>
+    <input type="text" class="form-control" name="image" placeholder="Dog's Image"/>
   </div>
   <div>
     <label for="breed">Breed</label>
-    <input type="text" name="breed" placeholder="Dog's Breed" />
+    <input type="text" class="form-control" name="breed" placeholder="Dog's Breed" />
   </div>
   <div>
     <label for="age">Age</label>
-    <input type="text" name="age" placeholder="Dog's Age" />
+    <input type="text" class="form-control" name="age" placeholder="Dog's Age" />
   </div>
   <div>
     <label for="description">Description</label>
-    <input type="text" name="desription" placeholder="Brief Description of your Dog" />
+    <input type="text" class="form-control" name="desription" placeholder="Brief Description of your Dog" />
   </div>
   <button type="submit">Add Dog</button>
 </form>
+</div>

@@ -1,23 +1,29 @@
-
+<div class="mainUserPage">
 <div class="userProf">
     {{#each userProfile}}
+    <br>
+    <h3> {{name}}</h3>
+    <br>
     <img class="userPic" src="{{image}}" alt="{{name}}">
-    <p>Name: {{name}}</p>
-    <p>Favorite Park: {{favPark}}</p>
+    <br>
+    <p id="userInfo">Favorite Park: {{favPark}}</p>
 
     <div class="userDog">
-        <h2>{{name}} 's dog</h2>
+        <h2 class="ownerDog">{{name}} 's dog</h2>
         {{#each dog}}
         <img class="dogPic" src="{{image}}" alt="{{name}}">
-        <p>Name: {{name}}</p>
-        <p>Breed: {{breed}}</p>
-        <p>Age: {{age}}</p>
+        <p id="userInfo">Name: {{name}}</p>
+        <p id="userInfo">Breed: {{breed}}</p>
+        <p id="userInfo">Age: {{age}}</p>
     </div>
 
 
     {{/each}} 
-    <button><a href="/users/{{_id}}">View Profile</a></button>
+    <button class="view btn btn-primary"><a href="/users/{{_id}}">View Profile</a></button>
     <br>
     {{/each}}
     
+    
+</div>
+<br>
 </div>

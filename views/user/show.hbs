@@ -8,16 +8,22 @@
             <br>
             <p>Favorite Park: {{userProf.favPark}}</p>
             <center>
-                <button class="favPark btn btn-info">
-                    <a href="/users/{{userProf._id}}/parks">Favorite Park</a>
-                </button>
-                <button class="editButton btn btn-warning">
-                    <a href="/users/{{userProf._id}}/edit">Edit User</a>
-                </button>
-                <div class="addBtn">
-                    <button class="addDog btn btn-success">
-                        <a href="/users/{{../userProf._id}}/dog/new">Add Dog</a>
+                <a href="/users/{{userProf._id}}/parks">
+                    <button class="favPark btn btn-info">
+                        Favorite Park
                     </button>
+                </a>
+                <a href="/users/{{userProf._id}}/edit">
+                    <button class="editButton btn btn-warning">
+                        Edit User
+                    </button>
+                </a>
+                <div class="addBtn">
+                    <a href="/users/{{userProf._id}}/dog/new">
+                        <button class="addDog btn btn-success">
+                            Add Dog
+                        </button>
+                    </a>
                 </div>
             </center>
         </div>

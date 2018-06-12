@@ -26,14 +26,14 @@ User.remove()
       parkName: 'Piedmont Dog Park',
       image: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Dog_park_in_Piedmont_Park.JPG',
       streetAddress: 'Park Dr NE, Atlanta, GA 30309',
-      description: 'Piedmont Park is a haven for dogs and humans alike! While a City of Atlanta ordinance requires all dogs in public areas to be leashed, Piedmont Dog Park is one of the few locations in metro Atlanta where dogs may run free, off the leash. Since 2002, this special off-leash area is one of the most popular features of Piedmont Park.', 
+      description: 'Piedmont Park is a haven for dogs and humans alike! While a City of Atlanta ordinance requires all dogs in public areas to be leashed, Piedmont Dog Park is one of the few locations in metro Atlanta where dogs may run free, off the leash. Since 2002, this special off-leash area is one of the most popular features of Piedmont Park.',
       website: 'https://www.piedmontpark.org/things-to-do/dog-parks/'
     })
     const park2 = new Park({
       parkName: 'GlenLake Dog Park',
       image: 'https://media-cdn.tripadvisor.com/media/photo-s/08/be/60/cf/glenlake-park-pool.jpg',
       streetAddress: 'Park Dr NE, Atlanta, GA 30309',
-      description: 'Decatur Dog Parks have been busy with families, neighbors and four-legged friends visiting and playing together. Dog parks give citizens and their dogs an opportunity to exercise and socialize', 
+      description: 'Decatur Dog Parks have been busy with families, neighbors and four-legged friends visiting and playing together. Dog parks give citizens and their dogs an opportunity to exercise and socialize',
       website: 'http://www.decaturga.com/city-government/city-departments/active-living/dog-parks'
     })
     const dog1 = new Dog({

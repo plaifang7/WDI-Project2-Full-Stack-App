@@ -36,11 +36,11 @@ router.get('/', (req, res, next) => {
 
   // SHOW Route
   router.get('/:id', (req, res) => {
-
+    const dogId = req.params.dogId
     User
       .findById(req.params.id)
       .then((userProf) => {
-        res.render('user/show', { userProf })
+        res.render('user/show', { userProf, dogId })
       })
   })
 

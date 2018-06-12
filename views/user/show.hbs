@@ -1,21 +1,28 @@
 <div class="userBox">
-    <button class="favPark"><a href="/users/{{userProf._id}}/parks">Favorite Park</a></button>
-    <button class="addDog"><a href="/users/{{userProf._id}}/dog/new">Add Dog</a></button>
+    <button class="favPark">
+        <a href="/users/{{userProf._id}}/parks">Favorite Park</a>
+    </button>
+    <button class="addDog">
+        <a href="/users/{{userProf._id}}/dog/new">Add Dog</a>
+    </button>
     <h1 class="userShow">{{userProf.name}}</h1>
     <img class="userPicProf" src="{{userProf.image}}" alt="{{userProf.name}}">
     <p>Favorite Park: {{userProf.favPark}}</p>
 
     
-    {{#each userProf.dog}}
-    <div class="dogBox">
-        <h3>{{name}}</h3>
-        <img class="dogShow" src="{{image}}" alt="{{name}}">
-        <p>Breed: {{breed}}</p>
-        <p>Age: {{age}}</p>
-        <p>About {{name}}: {{description}}</p>
-    </div>
+{{#each userProf.dog}}
+<div class="dogBox">
+    <h3>{{name}}</h3>
+    <img class="dogShow" src="{{image}}" alt="{{name}}">
+    <p>Breed: {{breed}}</p>
+    <p>Age: {{age}}</p>
+    <p>About {{name}}: {{description}}</p>
+<button>
+        <a href="/users/{{../userProf._id}}/dog/{{_id}}/delete">Delete Dog</a>
+    </button>
+</div>
     {{/each}}
-    
+
     <button class="match">Match</button>
     <form action="/users/{{userProf._id}}?_method=DELETE" method="POST">
         <button class="noMatch">No Match</button>
@@ -23,5 +30,5 @@
     <button class="editButton">
         <a href="/users/{{userProf._id}}/edit">Edit User</a>
     </button>
-    
+
 </div>

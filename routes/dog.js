@@ -31,6 +31,23 @@ router.post('/', (req, res) => {
         })
 })
 
+//Delete Dog
+router.get('/:dogId/delete', (req, res) => {
+    const userId = req.params.userId
+    const dogId = req.params.dogId
+    User
+    .findById(userId)
+    .then((user) => {
+        const doggy = user.dog
+        console.log(doggy)
+        doggy.id(dogId).remove()
+        return user.save()
+    })
+    .then(() =>{
+        res.redirect(`/users/${userId}`)
+    })
+    })
+
 
 
 

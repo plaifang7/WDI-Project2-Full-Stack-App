@@ -1,6 +1,6 @@
 # Dinder
 
-##Heroku:
+## Heroku:
 * https://doginder.herokuapp.com/
 <br>
 
@@ -19,7 +19,7 @@
 * Node.js
 <br>
 
-##Unsolved Problems
+## Unsolved Problems
 ### Icebox
 * Favorite Friend List
 * Match Button Leads to Messaging
@@ -27,11 +27,11 @@
 ### Ongoing
 * Park Profile Page
 
-#ERD
+# ERD
 ![image](/public/images/IMG_0262.jpg)
 <br>
 
-#Wireframe
+# Wireframe
 ![image](/public/images/IMG_0269.jpg)
 ![image](/public/images/IMG_0270.jpg)
 ![image](/public/images/IMG_0271.jpg)
@@ -40,7 +40,7 @@
 
 
 
-##Trello Board:
+## Trello Board:
 * https://trello.com/b/ebp7TUrp/plf-wdi-project-2-doginder
 <br>
 

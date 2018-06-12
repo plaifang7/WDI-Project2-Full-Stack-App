@@ -8,14 +8,17 @@ const Dog = require('../models/dog');
 const Park = require('../models/location');
 
 
-
-mongoose.connect('mongodb://localhost/WDI-Project2-Full-Stack-App')
-  .then(() => {
-    console.log('connected to mongoDB')
-  })
-  .catch((err) => {
-    console.log('ERROR', err)
-  })
+if (process.env.MONGODB_URI) {
+  mongoose.connect(process.env.MONGODB_URI);
+}
+else {
+  mongoose.connect('mongodb://localhost/express-movies');
+}
+mongoose.connection.on('error', function (err) {
+  console.error('MongoDB connection error: ' + err);
+  process.exit(-1);
+}
+);
 
 User.remove()
   .then(() => {

@@ -27,6 +27,8 @@
 ### Ongoing
 * Park Profile Page
 
+<br>
+
 # ERD
 ![image](/public/images/IMG_0262.jpg)
 <br>
@@ -38,7 +40,7 @@
 
 
 
-
+<br>
 
 ## Trello Board:
 * https://trello.com/b/ebp7TUrp/plf-wdi-project-2-doginder

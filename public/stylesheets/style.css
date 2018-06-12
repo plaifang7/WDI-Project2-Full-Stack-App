@@ -1,22 +1,46 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  /* background-image: url('http://berniesiegelmd.com/wp-content/uploads/2013/07/dogs-playing.jpg'); */
+  background-image: url('https://vetstreet-brightspot.s3.amazonaws.com/2f/beebb0ae2111e088ab0050568d634f/file/54-dog-parks-danger-452mk071511.jpg');
   background-repeat: no-repeat;
-  
+  background-size: cover; 
 }
+  
+
+ 
 
 a {
   color: #00B7FF;
+  text-decoration: none;
+}
+.signUp{
+  float: right;
+
 }
 
-.navbar{
-  display: inline;
+.navBar{
+  border: 3px solid teal;
+  width: 100%;
+  background-color: teal;
+  
 }
+.nav{
+  color: teal;
+}
+button:hover{
+  background-color: salmon;
+
+
+}
+
 
 .bigDinder{
   font-size: 150px;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: salmon;
+  padding: 70px;
+
 
 }
 .userPic{
@@ -36,4 +60,11 @@ a {
   width: 650px;
   margin: auto;
   display: block;
+}
+.dinderLogo{
+  font-family: 'Raleway', sans-serif;
+  color: salmon;
+  font-size: 35px;
+
+
 }

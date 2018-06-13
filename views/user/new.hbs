@@ -1,18 +1,20 @@
 <h1>Create New User</h1>
 <center>
+  <div class="form-group">
   <form action="/users" method="POST">
     <div>
       <label for="title">Name</label>
-      <input type="text" name="name" placeholder="Users name" />
+      <input type="text" class="form-control" name="name" placeholder="Users name" />
     </div>
     <div>
       <label for="description">Image</label>
-      <input type="text" name="image" placeholder="Users Image" />
+      <input type="text" class="form-control" name="image" placeholder="Users Image" />
     </div>
     <div>
       <label for="subject">Favorite Park</label>
-      <input type="text" name="favPark" placeholder="Users Fave Park" />
+      <input type="text" class="form-control" name="favPark" placeholder="Users Fave Park" />
     </div>
     <button type="submit">Sign Up</button>
   </form>
+  </div>
 </center>

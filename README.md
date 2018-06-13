@@ -19,6 +19,10 @@
 * Node.js
 <br>
 
+## Approach Taken
+<p>The approach I took for this project was to get the skeleton and planning together first. This meaning that I worked on my ERD, wireframes and Trello board first. I started with the ERDs the day before and added onto it on the first day of the project. Once I was able to determine my models, I was able to put my wireframe together and see what my website will look like. After I created my wireframe, I was able to move forward to my step-by-step planning in my trello board. Once all three of these steps were completed, I felt comfortable with moving forward with the back-end. In my first project, I started with the front-end because I didnt understand grid and I paid for it. This time around, I wanted to take what I learned from this experience and took the advice of my good friend Kumar and started with getting an understanding of the back-end first. I saw myself getting a grasp of the idea of creating an MVP site. I was able to figure out the full CRUD for my users and saw it project on my app right before my eyes and I really enjoyed that thoroughly. I left my charger in GA on the day before the due date and had absolutely no CSS on my site, but was at a point of full functionatlity. This caused me to rely on bootstrap for my CSS, which actually came out really nice. Overall, this project was a very tough one, but with the collaboration of my peers, I was able to get a better grasp of each concept that we went over in this project. </p>
+<br>
+
 ## Unsolved Problems
 ### Icebox
 * Favorite Friend List
